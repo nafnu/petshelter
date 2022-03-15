@@ -12,7 +12,72 @@
   </head>
   <body>
 
-  <?php include 'navbar.php' ?>
+  <?php include 'navbar.php';
+  
+  class Dog {
+      public $name;
+      public $description;
+      
+      public function __construct($n, $d){
+          $this->name = $n;
+          $this->description = $d;
+      }
+ 
+    }
+
+    $dog1 = new Dog("Max", "I like to play a lot");
+    $dog2 = new Dog("Jes", "I am serious");
+    $dog3 = new Dog("Kia", "Tinity mini");
+ 
+ 
+    ?>
+
+  
+  
+  <div class="container">
+
+  <div class="container">
+  <div class="row">
+    <div class="col">
+      
+    <div class="card" style="width: 18rem;">
+     <img src="images/OIP.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title"><?= $dog1->name ?></h5>
+          <p class="card-text"><?= $dog1->description ?></p>
+        </div>
+    </div>
+
+    </div>
+    <div class="col">
+      <!-- Column -->
+      <div class="card" style="width: 18rem;">
+     <img src="images/OIP.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title"><?= $dog2->name ?></h5>
+          <p class="card-text"><?= $dog2->description ?></p>
+        </div>
+    </div>
+
+    </div>
+    <div class="col">
+       <!-- Column -->
+      <div class="card" style="width: 18rem;">
+     <img src="images/OIP.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title"><?= $dog3->name ?></h5>
+          <p class="card-text"><?= $dog3->description ?></p>
+        </div>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+
+    
+
+  </div>
 
   
 
